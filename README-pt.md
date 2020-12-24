@@ -41,7 +41,7 @@
     - baixar o repositorio smarts-javascript-nodejs-vuejs na sua máquina local;
     
   > Segundo passo
-    - entrar pelo pelo terminal na pasta "/server" do projeto e rodar o comando: "npm start" ou "node start". 
+    - entrar pelo pelo terminal na pasta "/service" do projeto e rodar o comando: "npm start" ou "node start". 
       E assim, a API já está rodando localmente pela porta 3000;
     OBS.: É necessário ter o Node.js e NPM instalado no seu computador para que os comandos possam ser reconhecidos pelo sistema.
     Se instalar o Node.js por esse site: "https://nodejs.org/en/blog/release/v12.18.2/". Ele já instala o NPM em conjunto;
@@ -61,11 +61,11 @@
 ## Como fazer o deploy do projeto
   
   > Primeiro passo
-    - construir dois repósitorios no github, onde será armazenado a pasta do back-end("/server") em um repositório 
+    - construir dois repósitorios no github, onde será armazenado a pasta do back-end("/service") em um repositório 
       e o front-end("/smart-challenge") no outro repositório;
       
   > Segundo passo
-    - fazer o commit e o push da pasta "/server" para o repositório do back-end no seu github, 
+    - fazer o commit e o push da pasta "/service" para o repositório do back-end no seu github, 
       após isso vamos criar uma conta no Heroku, através do site "https://www.heroku.com/";
       
   > Terceiro passo
@@ -73,7 +73,7 @@
       no lado direito do site no canto superior;
       
   > Quarto passo
-    - dentro da basta "/server" é necessário criar um arquivo (que nesse caso já está criado) com o nome "Procfile" com 
+    - dentro da basta "/service" é necessário criar um arquivo (que nesse caso já está criado) com o nome "Procfile" com 
       o conteúdo: "web: npm start" para que o Heroku inicie a nossa API quando for feito o deploy do serviço;
       
   > Quinto passo
